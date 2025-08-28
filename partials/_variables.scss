@@ -13,21 +13,26 @@
 @use "./utils" as *;
 
 :root {
-  --clr-primary: #3c8067;
-  --clr-primary-shade: #1b4133;
+  --clr-primary: #7541c8;
+  --clr-primary-tint: #c4a2f6;
+  -clr-primary-tint-2: #eee5ff;
 
   --clr-white: #fff;
-  --clr-grey-1: #f2ebe3;
-  --clr-grey-2: #6c7289;
-  --clr-grey-3: #1c232b;
+  --clr-grey-1: #e7eaee;
+  --clr-grey-2: #cfcfcf;
+  --clr-grey-3: #cfcfcf;
+  --clr-grey-4: #676d7e;
+  --clr-grey-5: #48556a;
+  --clr-grey-6: #676d7e;
+  --clr-black: #121212;
 
-  --fs-default: var(--fs-3);
+  --fs-default: #{toRem(13px)};
 
-  --ff-main: "Montserrat";
+  --ff-main: "Barlow Semi Condensed";
   --ff-secondary: "Fraunces";
 
   --fw-normal: 500;
-  --fw-bold: 700;
+  --fw-bold: 600;
 
   // FONT SIZE
   --fs-1: #{toRem(10px)};
