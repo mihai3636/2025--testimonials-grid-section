@@ -112,7 +112,6 @@ body {
 }
 
 .card {
-  background-color: lightgreen;
   padding: var(--sp-6) var(--sp-7);
   border-radius: 10px;
   box-shadow: 20px 40px 50px rgba(0, 0, 0, 0.3);
