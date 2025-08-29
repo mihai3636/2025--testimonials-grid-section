@@ -85,7 +85,7 @@ body {
   font-size: var(--fs-default);
   font-weight: var(--fw-normal);
   line-height: 1.5;
-  padding-inline: var(--sp-7);
+  padding: var(--sp-7);
   min-height: 100svh;
   display: flex;
   align-items: center;
@@ -209,6 +209,67 @@ body {
 
 .card--patrick .card-img {
   border-color: var(--clr-primary);
+}
+
+@media (max-width: 59.375rem) {
+  .testimonials {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .card--kira {
+    grid-row: 3;
+    grid-column: 1/-1;
+    position: relative;
+    z-index: 200;
+  }
+}
+@media (max-width: 46.875rem) {
+  .drawing-quote {
+    display: none;
+  }
+  .testimonials {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .card--kira {
+    grid-row: 4;
+  }
+  .card--daniel {
+    grid-column: 1/-1;
+    grid-row: 1;
+  }
+  .card--jeanette {
+    grid-column: 1/span 2;
+    grid-row: 3;
+  }
+  .card--patrick {
+    grid-column: 1/-1;
+    grid-row: 2;
+  }
+  .card--jonathan {
+    grid-column: 3/-1;
+    grid-row: 3;
+  }
+}
+@media (max-width: 31.25rem) {
+  .card--kira {
+    grid-column: 1/-1;
+    grid-row: 5;
+  }
+  .card--daniel {
+    grid-column: 1/-1;
+    grid-row: 1;
+  }
+  .card--jeanette {
+    grid-column: 1/-1;
+    grid-row: 3;
+  }
+  .card--patrick {
+    grid-column: 1/-1;
+    grid-row: 2;
+  }
+  .card--jonathan {
+    grid-column: 1/-1;
+    grid-row: 4;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

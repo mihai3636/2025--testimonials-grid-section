@@ -1,1 +1,75 @@
 @use "./utils" as *;
+
+@media (max-width: toRem(950px)) {
+  .testimonials {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .card--kira {
+    grid-row: 3;
+    grid-column: 1 / -1;
+
+    position: relative;
+    z-index: 200;
+  }
+}
+
+@media (max-width: toRem(750px)) {
+  .drawing-quote {
+    display: none;
+  }
+  .testimonials {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .card--kira {
+    grid-row: 4;
+  }
+
+  .card--daniel {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+
+  .card--jeanette {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+  }
+
+  .card--patrick {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+
+  .card--jonathan {
+    grid-column: 3 / -1;
+    grid-row: 3;
+  }
+}
+
+@media (max-width: toRem(500px)) {
+  .card--kira {
+    grid-column: 1 / -1;
+    grid-row: 5;
+  }
+
+  .card--daniel {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+
+  .card--jeanette {
+    grid-column: 1 / -1;
+    grid-row: 3;
+  }
+
+  .card--patrick {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+
+  .card--jonathan {
+    grid-column: 1 / -1;
+    grid-row: 4;
+  }
+}
