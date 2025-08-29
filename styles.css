@@ -11,7 +11,7 @@
 :root {
   --clr-primary: #7541c8;
   --clr-primary-tint: #c4a2f6;
-  -clr-primary-tint-2: #eee5ff;
+  --clr-primary-tint-2: #eee5ff;
   --clr-white: #fff;
   --clr-grey-1: #e7eaee;
   --clr-grey-2: #cfcfcf;
